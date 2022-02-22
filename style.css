@@ -1,0 +1,119 @@
+/* General -------------------------------------*/
+*{
+    margin:0; /* tout les block on un margin par defaut de 8px*/
+    box-sizing: border-box;/*enlevé les bords*/
+}
+/* body -----------------------------------------*/
+body{
+    background-color:rgb(236, 202, 9);
+    
+}
+/*conteneur son parent c'est body----------------*/
+#wrapper{
+    width:80%;
+    margin: auto; /*la meme taille a gauche et a droite pour des block centrer*/
+    text-align: center; 
+
+}
+/* header son parent c'est wrapper------------------------------------ */
+
+/*---Groupe------------------------------------------*/
+h1, nav, aside{
+    padding: 1%;
+    background-color: rgb(20, 106, 235);
+    
+}
+h1, a, aside, footer{
+    color: rgb(255, 255, 255);
+}
+
+header img{  
+   width:100%;
+   vertical-align: top; /* reduire lespace entre le header et le main*/
+   border-bottom: solid 1px white;
+   border-top: solid 1px white;
+}
+/* main son parent c'est wrapper----------------------------------*/
+main{
+    width: 100%;
+    padding: 2% 3%;
+    background-color: white;
+    /* display: flex; /*aligne les élements a l'interieur */
+    /*text-align: center;*/    
+}
+main h2{  
+    padding-bottom: 2%;
+    text-align: left;
+}
+/* nav son parent c'est main ----------------------------------*/
+nav{
+    width: 100%;
+    padding: 2%;
+    color: rgb(255, 255, 255);
+    border-bottom-style: dashed;
+   /* height:fit-content;*/ /*la taille sadapte au contenu*/
+    /* text-align: center; */
+   /* display: flex;*/
+   /* flex-direction: column;*/  /* mettre en colonne*/
+}
+/* nav son parent c'est main ----------------------------------*/
+nav a{
+    margin:0 10px; 
+    text-decoration: none;
+    text-transform: uppercase;
+ 
+}
+nav a:hover{
+    color:black;
+}
+/* nav a:first-child{
+    background-color: rgb(109, 0, 100);
+} */
+
+/* title son parent c'est main -----------------------------------*/
+h2{
+    /* padding: 2% 0%; */
+    color:rgb(236, 202, 9);
+}
+#content{
+    display: flex;
+    justify-content: space-between
+}
+/* article  son parent c'est main ----------------------------------*/
+article{   
+    width: 65%;
+    text-align: justify;
+}
+article p{
+    margin-bottom: 1%;
+}
+article figure {
+    display: flex;
+    justify-content: space-between;
+    }
+article figure img{
+    width: 33%;
+    border:solid black 1px;
+}
+/* article suplementaire----------------------------------*/
+aside{
+    width: 30%;
+    text-align: center;   
+}
+h3{ 
+    padding: 2%;
+    text-align: center;
+}
+aside img{
+    width: 80%;
+    margin: 0%;
+    border:1px solid white;
+}
+aside p{
+    margin-top: 5%;
+    text-align: justify;
+}
+/* footer----------------------------------*/
+footer{
+    background-color: rgb(0, 0, 71);
+}
